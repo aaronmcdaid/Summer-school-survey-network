@@ -1,0 +1,84 @@
+Dataset:
+   A network derived from a survey taken at the Web Science Doctoral Summer School 2011 [1]
+
+Current Version:
+   2012-03-28 First public release
+
+Webpage:
+   http://sites.google.com/site/aaronmcdaid/sbm
+   http://clique.ucd.ie/data (along with other datasets from our research group)
+
+Created by:
+   Aaron McDaid, Samantha Lam, Ursula Redmond, Arthur White.
+   Clique Research Cluster, UCD Dublin and DERI Galway, Ireland
+   This research was supported by Science Foundation Ireland (SFI) Grant No. 08/SRC/I1407 - Clique Research Cluster
+
+
+== Description ==
+
+The 74 attendees were asked who they knew before the summer school and were
+also asked who they met during the summer school. 40 responded and gave us
+permission to make their data available in this anonymized dataset.
+We have completely removed one person who responded but did not give such
+permission.  This gives us a network of 73 nodes, where node A has a link
+to node B if person A reported that they knew (or met) person B.
+
+There are three directed, unweighted, networks in this first release:
+
+survey_numeric_before_edge_list.txt:
+   source node knew target node before the summer school.
+    583 edges between 67 nodes
+survey_numeric_during_edge_list.txt:
+   source node met target node at the summer school.
+    912 edges between 71 nodes
+survey_numeric_combined_edge_list.txt:
+   the union of the two networks above
+   1138 edges between 73 nodes
+
+There are 40 nodes with a non-zero out-degree in the combined network, these
+are the 40 that responded and gave us permission.
+
+Each of the 73 nodes has non-zero degree in the combined network,
+but some nodes are effetively missing from the other networks as they
+had zero degree in those networks.
+
+The files are a simple edge list, where each node has been assigned
+a number between 0 and 72 inclusive. We also did some annotation
+of the formal role of the person at the summer school.
+
+survey_numeric_status_map.csv:
+   This records, for each of the 73 people ordered from 0 to 72, what
+   their primary role was:
+      Speaker: Presented at the summer school
+      PC: Programme Committee
+      LO: Local organizing commitee
+      Attendee: Didn't fit into the above three roles.
+   There is also a field recording secondary_roles for those people who
+   fitted into multiple roles.
+
+== Analysis ==
+
+This dataset is first analyzed and presented in:
+    "Clustering in networks with the collapsed Stochastic Block Model"
+This describes a clustering algorithm which clustered the nodes based
+on the network. The clusters found were found to approximately match
+the roles described in survey_numeric_status_map.csv.
+
+Bibtex:
+@article{CollapsedSBM,
+    archivePrefix = {arXiv},
+    author = {McDaid, Aaron F. and Murphy, Brendan and Friel, Nial and Hurley, Neil},
+    title = {Clustering in networks with the collapsed Stochastic Block Model},
+    url = {http://arxiv.org/abs/1203.3083},
+    day = {14}, eprint = {1203.3083}, month = mar, posted-at = {2012-03-15 10:10:36}, priority = {2},
+    year = {2012}
+}
+(This paper is under review at a journal.)
+
+
+References:
+
+[1] http://webscience.deri.ie/schools/2011/index.html
+[2] http://arxiv.org/abs/1203.3083
+[3] https://sites.google.com/site/aaronmcdaid/sbm
+[4] http://clique.ucd.ie/data    Includes other datasets from our research group.
