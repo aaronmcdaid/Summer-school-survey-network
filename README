@@ -60,11 +60,14 @@ survey_numeric_status_map.csv:
 
 == Analysis ==
 
-This dataset is first analyzed and presented in:
-    "Clustering in networks with the collapsed Stochastic Block Model"
+This dataset is analyzed and presented in two papers, which are under
+review as of 2012-04-02:
+
+ -  "Clustering in networks with the collapsed Stochastic Block Model"
 This describes a clustering algorithm which clustered the nodes based
 on the network. The clusters found were found to approximately match
 the roles described in survey_numeric_status_map.csv.
+ -  "Increasing the Scalability of the Fitting of Generalised Block Models for Social Networks"
 
 Bibtex:
 @article{CollapsedSBM,
@@ -75,7 +78,18 @@ Bibtex:
     day = {14}, eprint = {1203.3083}, month = mar, posted-at = {2012-03-15 10:10:36}, priority = {2},
     year = {2012}
 }
-(This paper is under review at a journal.)
+(This paper is under review as of 2012-04-02.)
+@inproceedings{ChanGBM,
+    author = {Chan, Jeffrey and Lam, Samantha and Hayes, Conor},
+    booktitle = {International Joint Conference on Artificial Intelligence 2011 (IJCAI)},
+    priority = {2},
+    title = {Increasing the Scalability of the Fitting of Generalised Block Models for Social Networks},
+    url = {http://www.deri.ie/fileadmin/documents/uimr/jkcchan\_icjai11.pdf},
+    year = {2011}
+}
+(A later version of this paper is under review as of 2012-04-02.)
+
+
 
 
 References:
