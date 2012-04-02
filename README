@@ -1,5 +1,7 @@
 Dataset:
-   A network derived from a survey taken at the Web Science Doctoral Summer School 2011 [1]
+   A network derived from a survey taken at a doctoral summer school.
+   The data was gathered and prepared by AaronMcDaid, Samantha Lam,
+   Ursula Redmond and Arthur White[1].
 
 Current Version:
    2012-03-28 First public release
@@ -78,7 +80,8 @@ Bibtex:
 
 References:
 
-[1] http://webscience.deri.ie/schools/2011/index.html
+[1] AaronMcDaid <aaronmcdaid@gmail.com>, Arthur White <arthurwhite87@hotmail.co.uk>,
+        Ursula Redmond <u.redmond@gmail.com>, Samantha Lam <contradirony@gmail.com>
 [2] http://arxiv.org/abs/1203.3083
 [3] https://sites.google.com/site/aaronmcdaid/sbm
 [4] http://clique.ucd.ie/data    Includes other datasets from our research group.
